@@ -1,0 +1,591 @@
+2015-05-21 18:06:26 Error: [MissingViewException] View file "Home/index.ctp" is missing.
+Exception Attributes: array (
+  'file' => 'Home/index.ctp',
+)
+Request URL: /
+Stack Trace:
+#0 /Users/minghui/Documents/Project/trial/lib/Cake/View/View.php(470): View->_getViewFileName(NULL)
+#1 /Users/minghui/Documents/Project/trial/lib/Cake/Controller/Controller.php(960): View->render(NULL, NULL)
+#2 /Users/minghui/Documents/Project/trial/lib/Cake/Routing/Dispatcher.php(200): Controller->render()
+#3 /Users/minghui/Documents/Project/trial/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(HomeController), Object(CakeRequest))
+#4 /Users/minghui/Documents/Project/trial/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2015-05-21 18:06:44 Error: [MissingViewException] View file "Home/index.ctp" is missing.
+Exception Attributes: array (
+  'file' => 'Home/index.ctp',
+)
+Request URL: /
+Stack Trace:
+#0 /Users/minghui/Documents/Project/trial/lib/Cake/View/View.php(470): View->_getViewFileName(NULL)
+#1 /Users/minghui/Documents/Project/trial/lib/Cake/Controller/Controller.php(960): View->render(NULL, NULL)
+#2 /Users/minghui/Documents/Project/trial/lib/Cake/Routing/Dispatcher.php(200): Controller->render()
+#3 /Users/minghui/Documents/Project/trial/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(HomeController), Object(CakeRequest))
+#4 /Users/minghui/Documents/Project/trial/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2015-05-21 18:11:46 Error: [MissingViewException] View file "Layouts/metronic_new.ctp" is missing.
+Exception Attributes: array (
+  'file' => 'Layouts/metronic_new.ctp',
+)
+Request URL: /
+Stack Trace:
+#0 /Users/minghui/Documents/Project/trial/lib/Cake/View/View.php(722): View->_getViewFileName('/Layouts/metron...')
+#1 /Users/minghui/Documents/Project/trial/app/View/Layouts/default.ctp(63): View->extend('/Layouts/metron...')
+#2 /Users/minghui/Documents/Project/trial/lib/Cake/View/View.php(961): include('/Users/minghui/...')
+#3 /Users/minghui/Documents/Project/trial/lib/Cake/View/View.php(923): View->_evaluate('/Users/minghui/...', Array)
+#4 /Users/minghui/Documents/Project/trial/lib/Cake/View/View.php(546): View->_render('/Users/minghui/...')
+#5 /Users/minghui/Documents/Project/trial/lib/Cake/View/View.php(481): View->renderLayout('', 'default')
+#6 /Users/minghui/Documents/Project/trial/lib/Cake/Controller/Controller.php(960): View->render(NULL, NULL)
+#7 /Users/minghui/Documents/Project/trial/lib/Cake/Routing/Dispatcher.php(200): Controller->render()
+#8 /Users/minghui/Documents/Project/trial/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(HomeController), Object(CakeRequest))
+#9 /Users/minghui/Documents/Project/trial/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#10 {main}
+2015-05-21 18:11:49 Error: Fatal Error (1): Allowed memory size of 33554432 bytes exhausted (tried to allocate 262144 bytes) in [/Users/minghui/Documents/Project/trial/lib/Cake/Utility/Debugger.php, line 801]
+2015-05-21 18:11:49 Error: [FatalErrorException] Allowed memory size of 33554432 bytes exhausted (tried to allocate 262144 bytes)
+Request URL: /
+Stack Trace:
+#0 /Users/minghui/Documents/Project/trial/lib/Cake/Error/ErrorHandler.php(213): ErrorHandler::handleFatalError(1, 'Allowed memory ...', '/Users/minghui/...', 801)
+#1 [internal function]: ErrorHandler::handleError(1, 'Allowed memory ...', '/Users/minghui/...', 801, Array)
+#2 /Users/minghui/Documents/Project/trial/lib/Cake/Core/App.php(933): call_user_func('ErrorHandler::h...', 1, 'Allowed memory ...', '/Users/minghui/...', 801, Array)
+#3 /Users/minghui/Documents/Project/trial/lib/Cake/Core/App.php(906): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2015-05-21 18:11:58 Error: [MissingControllerException] Controller class ImgController could not be found.
+Exception Attributes: array (
+  'class' => 'ImgController',
+  'plugin' => NULL,
+)
+Request URL: /img/LOGOSITE
+Stack Trace:
+#0 /Users/minghui/Documents/Project/trial/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2020-03-27 08:13:14 Error: [MissingConnectionException] Database connection "Mysql" is missing, or could not be created.
+Exception Attributes: array (
+  'class' => 'Mysql',
+  'message' => 'SQLSTATE[HY000] [2002] php_network_getaddresses: getaddrinfo failed: No such host is known. ',
+  'enabled' => true,
+)
+Request URL: /cakephp/Dewtouch-interview/Record
+Stack Trace:
+#0 C:\xampp5.6.4\htdocs\cakephp\Dewtouch-interview\lib\Cake\Model\Datasource\DboSource.php(260): Mysql->connect()
+#1 C:\xampp5.6.4\htdocs\cakephp\Dewtouch-interview\lib\Cake\Model\ConnectionManager.php(105): DboSource->__construct(Array)
+#2 C:\xampp5.6.4\htdocs\cakephp\Dewtouch-interview\lib\Cake\Model\Model.php(3617): ConnectionManager::getDataSource('default')
+#3 C:\xampp5.6.4\htdocs\cakephp\Dewtouch-interview\lib\Cake\Model\Model.php(1155): Model->setDataSource('default')
+#4 C:\xampp5.6.4\htdocs\cakephp\Dewtouch-interview\lib\Cake\Model\Model.php(3644): Model->setSource('records')
+#5 C:\xampp5.6.4\htdocs\cakephp\Dewtouch-interview\lib\Cake\Model\Model.php(3022): Model->getDataSource()
+#6 C:\xampp5.6.4\htdocs\cakephp\Dewtouch-interview\lib\Cake\Model\Model.php(2994): Model->_readDataSource('all', Array)
+#7 C:\xampp5.6.4\htdocs\cakephp\Dewtouch-interview\app\Controller\RecordController.php(11): Model->find('all')
+#8 [internal function]: RecordController->index()
+#9 C:\xampp5.6.4\htdocs\cakephp\Dewtouch-interview\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(RecordController), Array)
+#10 C:\xampp5.6.4\htdocs\cakephp\Dewtouch-interview\lib\Cake\Routing\Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#11 C:\xampp5.6.4\htdocs\cakephp\Dewtouch-interview\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(RecordController), Object(CakeRequest))
+#12 C:\xampp5.6.4\htdocs\cakephp\Dewtouch-interview\app\webroot\index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#13 {main}
+2020-03-27 08:13:28 Error: [MissingConnectionException] Database connection "Mysql" is missing, or could not be created.
+Exception Attributes: array (
+  'class' => 'Mysql',
+  'message' => 'SQLSTATE[HY000] [2002] php_network_getaddresses: getaddrinfo failed: No such host is known. ',
+  'enabled' => true,
+)
+Request URL: /cakephp/Dewtouch-interview/Record
+Stack Trace:
+#0 C:\xampp5.6.4\htdocs\cakephp\Dewtouch-interview\lib\Cake\Model\Datasource\DboSource.php(260): Mysql->connect()
+#1 C:\xampp5.6.4\htdocs\cakephp\Dewtouch-interview\lib\Cake\Model\ConnectionManager.php(105): DboSource->__construct(Array)
+#2 C:\xampp5.6.4\htdocs\cakephp\Dewtouch-interview\lib\Cake\Model\Model.php(3617): ConnectionManager::getDataSource('default')
+#3 C:\xampp5.6.4\htdocs\cakephp\Dewtouch-interview\lib\Cake\Model\Model.php(1155): Model->setDataSource('default')
+#4 C:\xampp5.6.4\htdocs\cakephp\Dewtouch-interview\lib\Cake\Model\Model.php(3644): Model->setSource('records')
+#5 C:\xampp5.6.4\htdocs\cakephp\Dewtouch-interview\lib\Cake\Model\Model.php(3022): Model->getDataSource()
+#6 C:\xampp5.6.4\htdocs\cakephp\Dewtouch-interview\lib\Cake\Model\Model.php(2994): Model->_readDataSource('all', Array)
+#7 C:\xampp5.6.4\htdocs\cakephp\Dewtouch-interview\app\Controller\RecordController.php(11): Model->find('all')
+#8 [internal function]: RecordController->index()
+#9 C:\xampp5.6.4\htdocs\cakephp\Dewtouch-interview\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(RecordController), Array)
+#10 C:\xampp5.6.4\htdocs\cakephp\Dewtouch-interview\lib\Cake\Routing\Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#11 C:\xampp5.6.4\htdocs\cakephp\Dewtouch-interview\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(RecordController), Object(CakeRequest))
+#12 C:\xampp5.6.4\htdocs\cakephp\Dewtouch-interview\app\webroot\index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#13 {main}
+2020-03-27 08:14:41 Error: [MissingConnectionException] Database connection "Mysql" is missing, or could not be created.
+Exception Attributes: array (
+  'class' => 'Mysql',
+  'message' => 'SQLSTATE[HY000] [2002] php_network_getaddresses: getaddrinfo failed: No such host is known. ',
+  'enabled' => true,
+)
+Request URL: /cakephp/Dewtouch-interview/OrderReport/question
+Stack Trace:
+#0 C:\xampp5.6.4\htdocs\cakephp\Dewtouch-interview\lib\Cake\Model\Datasource\DboSource.php(260): Mysql->connect()
+#1 C:\xampp5.6.4\htdocs\cakephp\Dewtouch-interview\lib\Cake\Model\ConnectionManager.php(105): DboSource->__construct(Array)
+#2 C:\xampp5.6.4\htdocs\cakephp\Dewtouch-interview\lib\Cake\Model\Model.php(3617): ConnectionManager::getDataSource('default')
+#3 C:\xampp5.6.4\htdocs\cakephp\Dewtouch-interview\lib\Cake\Model\Model.php(1155): Model->setDataSource('default')
+#4 C:\xampp5.6.4\htdocs\cakephp\Dewtouch-interview\lib\Cake\Model\Model.php(3644): Model->setSource('orders')
+#5 C:\xampp5.6.4\htdocs\cakephp\Dewtouch-interview\lib\Cake\Model\Model.php(3022): Model->getDataSource()
+#6 C:\xampp5.6.4\htdocs\cakephp\Dewtouch-interview\lib\Cake\Model\Model.php(2994): Model->_readDataSource('all', Array)
+#7 C:\xampp5.6.4\htdocs\cakephp\Dewtouch-interview\app\Controller\OrderReportController.php(48): Model->find('all', Array)
+#8 [internal function]: OrderReportController->Question()
+#9 C:\xampp5.6.4\htdocs\cakephp\Dewtouch-interview\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(OrderReportController), Array)
+#10 C:\xampp5.6.4\htdocs\cakephp\Dewtouch-interview\lib\Cake\Routing\Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#11 C:\xampp5.6.4\htdocs\cakephp\Dewtouch-interview\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(OrderReportController), Object(CakeRequest))
+#12 C:\xampp5.6.4\htdocs\cakephp\Dewtouch-interview\app\webroot\index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#13 {main}
+2020-03-27 08:39:50 Error: [MissingActionException] Action PagesController::index() could not be found.
+Exception Attributes: array (
+  'controller' => 'PagesController',
+  'action' => 'index',
+)
+Request URL: /cakephp/Dewtouch-interview/Pages
+Stack Trace:
+#0 C:\xampp5.6.4\htdocs\cakephp\Dewtouch-interview\lib\Cake\Routing\Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#1 C:\xampp5.6.4\htdocs\cakephp\Dewtouch-interview\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(PagesController), Object(CakeRequest))
+#2 C:\xampp5.6.4\htdocs\cakephp\Dewtouch-interview\app\webroot\index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2020-03-29 10:40:20 Error: [MissingActionException] Action RecordController::index() could not be found.
+Exception Attributes: array (
+  'controller' => 'RecordController',
+  'action' => 'index',
+)
+Request URL: /cakephp/Dewtouch-interview/Record
+Stack Trace:
+#0 C:\xampp5.6.4\htdocs\cakephp\Dewtouch-interview\lib\Cake\Routing\Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#1 C:\xampp5.6.4\htdocs\cakephp\Dewtouch-interview\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(RecordController), Object(CakeRequest))
+#2 C:\xampp5.6.4\htdocs\cakephp\Dewtouch-interview\app\webroot\index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2020-03-29 10:40:34 Error: [MissingActionException] Action RecordController::index() could not be found.
+Exception Attributes: array (
+  'controller' => 'RecordController',
+  'action' => 'index',
+)
+Request URL: /cakephp/Dewtouch-interview/Record
+Stack Trace:
+#0 C:\xampp5.6.4\htdocs\cakephp\Dewtouch-interview\lib\Cake\Routing\Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#1 C:\xampp5.6.4\htdocs\cakephp\Dewtouch-interview\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(RecordController), Object(CakeRequest))
+#2 C:\xampp5.6.4\htdocs\cakephp\Dewtouch-interview\app\webroot\index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2020-03-29 10:41:06 Error: Fatal Error (1): Call to a member function responseType() on null in [C:\xampp5.6.4\htdocs\cakephp\Dewtouch-interview\app\Controller\RecordController.php, line 10]
+2020-03-29 10:41:06 Error: [FatalErrorException] Call to a member function responseType() on null
+Request URL: /cakephp/Dewtouch-interview/Record
+Stack Trace:
+#0 C:\xampp5.6.4\htdocs\cakephp\Dewtouch-interview\lib\Cake\Error\ErrorHandler.php(213): ErrorHandler::handleFatalError(1, 'Call to a membe...', 'C:\\xampp5.6.4\\h...', 10)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', 'C:\\xampp5.6.4\\h...', 10, Array)
+#2 C:\xampp5.6.4\htdocs\cakephp\Dewtouch-interview\lib\Cake\Core\App.php(933): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', 'C:\\xampp5.6.4\\h...', 10, Array)
+#3 C:\xampp5.6.4\htdocs\cakephp\Dewtouch-interview\lib\Cake\Core\App.php(906): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2020-03-29 10:43:42 Error: Fatal Error (1): Call to a member function responseType() on null in [C:\xampp5.6.4\htdocs\cakephp\Dewtouch-interview\app\Controller\RecordController.php, line 10]
+2020-03-29 10:43:42 Error: [FatalErrorException] Call to a member function responseType() on null
+Request URL: /cakephp/Dewtouch-interview/Record
+Stack Trace:
+#0 C:\xampp5.6.4\htdocs\cakephp\Dewtouch-interview\lib\Cake\Error\ErrorHandler.php(213): ErrorHandler::handleFatalError(1, 'Call to a membe...', 'C:\\xampp5.6.4\\h...', 10)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', 'C:\\xampp5.6.4\\h...', 10, Array)
+#2 C:\xampp5.6.4\htdocs\cakephp\Dewtouch-interview\lib\Cake\Core\App.php(933): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', 'C:\\xampp5.6.4\\h...', 10, Array)
+#3 C:\xampp5.6.4\htdocs\cakephp\Dewtouch-interview\lib\Cake\Core\App.php(906): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2020-03-29 10:44:09 Error: Fatal Error (1): Call to a member function responseType() on null in [C:\xampp5.6.4\htdocs\cakephp\Dewtouch-interview\app\Controller\RecordController.php, line 10]
+2020-03-29 10:44:09 Error: [FatalErrorException] Call to a member function responseType() on null
+Request URL: /cakephp/Dewtouch-interview/Record
+Stack Trace:
+#0 C:\xampp5.6.4\htdocs\cakephp\Dewtouch-interview\lib\Cake\Error\ErrorHandler.php(213): ErrorHandler::handleFatalError(1, 'Call to a membe...', 'C:\\xampp5.6.4\\h...', 10)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', 'C:\\xampp5.6.4\\h...', 10, Array)
+#2 C:\xampp5.6.4\htdocs\cakephp\Dewtouch-interview\lib\Cake\Core\App.php(933): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', 'C:\\xampp5.6.4\\h...', 10, Array)
+#3 C:\xampp5.6.4\htdocs\cakephp\Dewtouch-interview\lib\Cake\Core\App.php(906): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2020-03-29 10:47:50 Error: Fatal Error (1): Call to a member function responseType() on null in [C:\xampp5.6.4\htdocs\cakephp\Dewtouch-interview\app\Controller\RecordController.php, line 10]
+2020-03-29 10:47:50 Error: [FatalErrorException] Call to a member function responseType() on null
+Request URL: /cakephp/Dewtouch-interview/Record
+Stack Trace:
+#0 C:\xampp5.6.4\htdocs\cakephp\Dewtouch-interview\lib\Cake\Error\ErrorHandler.php(213): ErrorHandler::handleFatalError(1, 'Call to a membe...', 'C:\\xampp5.6.4\\h...', 10)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', 'C:\\xampp5.6.4\\h...', 10, Array)
+#2 C:\xampp5.6.4\htdocs\cakephp\Dewtouch-interview\lib\Cake\Core\App.php(933): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', 'C:\\xampp5.6.4\\h...', 10, Array)
+#3 C:\xampp5.6.4\htdocs\cakephp\Dewtouch-interview\lib\Cake\Core\App.php(906): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2020-03-29 11:31:34 Error: [MissingActionException] Action PagesController::index() could not be found.
+Exception Attributes: array (
+  'controller' => 'PagesController',
+  'action' => 'index',
+)
+Request URL: /cakephp/Dewtouch-interview/Pages
+Stack Trace:
+#0 C:\xampp5.6.4\htdocs\cakephp\Dewtouch-interview\lib\Cake\Routing\Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#1 C:\xampp5.6.4\htdocs\cakephp\Dewtouch-interview\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(PagesController), Object(CakeRequest))
+#2 C:\xampp5.6.4\htdocs\cakephp\Dewtouch-interview\app\webroot\index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2020-03-29 16:16:39 Error: Fatal Error (1): Call to a member function find() on null in [C:\xampp5.6.4\htdocs\cakephp\Dewtouch-interview\app\Controller\FileUploadController.php, line 47]
+2020-03-29 16:16:39 Error: [FatalErrorException] Call to a member function find() on null
+Request URL: /cakephp/Dewtouch-interview/FileUpload
+Stack Trace:
+#0 C:\xampp5.6.4\htdocs\cakephp\Dewtouch-interview\lib\Cake\Error\ErrorHandler.php(213): ErrorHandler::handleFatalError(1, 'Call to a membe...', 'C:\\xampp5.6.4\\h...', 47)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', 'C:\\xampp5.6.4\\h...', 47, Array)
+#2 C:\xampp5.6.4\htdocs\cakephp\Dewtouch-interview\lib\Cake\Core\App.php(933): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', 'C:\\xampp5.6.4\\h...', 47, Array)
+#3 C:\xampp5.6.4\htdocs\cakephp\Dewtouch-interview\lib\Cake\Core\App.php(906): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2020-03-29 16:41:35 Error: Fatal Error (1): Call to a member function find() on null in [C:\xampp5.6.4\htdocs\cakephp\Dewtouch-interview\app\Controller\FileUploadController.php, line 47]
+2020-03-29 16:41:35 Error: [FatalErrorException] Call to a member function find() on null
+Request URL: /cakephp/Dewtouch-interview/FileUpload
+Stack Trace:
+#0 C:\xampp5.6.4\htdocs\cakephp\Dewtouch-interview\lib\Cake\Error\ErrorHandler.php(213): ErrorHandler::handleFatalError(1, 'Call to a membe...', 'C:\\xampp5.6.4\\h...', 47)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', 'C:\\xampp5.6.4\\h...', 47, Array)
+#2 C:\xampp5.6.4\htdocs\cakephp\Dewtouch-interview\lib\Cake\Core\App.php(933): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', 'C:\\xampp5.6.4\\h...', 47, Array)
+#3 C:\xampp5.6.4\htdocs\cakephp\Dewtouch-interview\lib\Cake\Core\App.php(906): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2020-03-29 16:41:51 Error: Fatal Error (1): Call to a member function error() on null in [C:\xampp5.6.4\htdocs\cakephp\Dewtouch-interview\app\Controller\FileUploadController.php, line 42]
+2020-03-29 16:41:51 Error: [FatalErrorException] Call to a member function error() on null
+Request URL: /cakephp/Dewtouch-interview/FileUpload
+Stack Trace:
+#0 C:\xampp5.6.4\htdocs\cakephp\Dewtouch-interview\lib\Cake\Error\ErrorHandler.php(213): ErrorHandler::handleFatalError(1, 'Call to a membe...', 'C:\\xampp5.6.4\\h...', 42)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', 'C:\\xampp5.6.4\\h...', 42, Array)
+#2 C:\xampp5.6.4\htdocs\cakephp\Dewtouch-interview\lib\Cake\Core\App.php(933): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', 'C:\\xampp5.6.4\\h...', 42, Array)
+#3 C:\xampp5.6.4\htdocs\cakephp\Dewtouch-interview\lib\Cake\Core\App.php(906): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2020-03-29 16:48:09 Error: Fatal Error (1): Call to a member function error() on null in [C:\xampp5.6.4\htdocs\cakephp\Dewtouch-interview\app\Controller\FileUploadController.php, line 45]
+2020-03-29 16:48:09 Error: [FatalErrorException] Call to a member function error() on null
+Request URL: /cakephp/Dewtouch-interview/FileUpload
+Stack Trace:
+#0 C:\xampp5.6.4\htdocs\cakephp\Dewtouch-interview\lib\Cake\Error\ErrorHandler.php(213): ErrorHandler::handleFatalError(1, 'Call to a membe...', 'C:\\xampp5.6.4\\h...', 45)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', 'C:\\xampp5.6.4\\h...', 45, Array)
+#2 C:\xampp5.6.4\htdocs\cakephp\Dewtouch-interview\lib\Cake\Core\App.php(933): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', 'C:\\xampp5.6.4\\h...', 45, Array)
+#3 C:\xampp5.6.4\htdocs\cakephp\Dewtouch-interview\lib\Cake\Core\App.php(906): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2020-03-29 16:48:15 Error: Fatal Error (1): Call to a member function error() on null in [C:\xampp5.6.4\htdocs\cakephp\Dewtouch-interview\app\Controller\FileUploadController.php, line 45]
+2020-03-29 16:48:15 Error: [FatalErrorException] Call to a member function error() on null
+Request URL: /cakephp/Dewtouch-interview/FileUpload
+Stack Trace:
+#0 C:\xampp5.6.4\htdocs\cakephp\Dewtouch-interview\lib\Cake\Error\ErrorHandler.php(213): ErrorHandler::handleFatalError(1, 'Call to a membe...', 'C:\\xampp5.6.4\\h...', 45)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', 'C:\\xampp5.6.4\\h...', 45, Array)
+#2 C:\xampp5.6.4\htdocs\cakephp\Dewtouch-interview\lib\Cake\Core\App.php(933): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', 'C:\\xampp5.6.4\\h...', 45, Array)
+#3 C:\xampp5.6.4\htdocs\cakephp\Dewtouch-interview\lib\Cake\Core\App.php(906): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2020-03-29 16:51:09 Error: Fatal Error (1): Call to a member function error() on null in [C:\xampp5.6.4\htdocs\cakephp\Dewtouch-interview\app\Controller\FileUploadController.php, line 45]
+2020-03-29 16:51:09 Error: [FatalErrorException] Call to a member function error() on null
+Request URL: /cakephp/Dewtouch-interview/FileUpload
+Stack Trace:
+#0 C:\xampp5.6.4\htdocs\cakephp\Dewtouch-interview\lib\Cake\Error\ErrorHandler.php(213): ErrorHandler::handleFatalError(1, 'Call to a membe...', 'C:\\xampp5.6.4\\h...', 45)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', 'C:\\xampp5.6.4\\h...', 45, Array)
+#2 C:\xampp5.6.4\htdocs\cakephp\Dewtouch-interview\lib\Cake\Core\App.php(933): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', 'C:\\xampp5.6.4\\h...', 45, Array)
+#3 C:\xampp5.6.4\htdocs\cakephp\Dewtouch-interview\lib\Cake\Core\App.php(906): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2020-03-29 16:51:38 Error: Fatal Error (1): Call to a member function error() on null in [C:\xampp5.6.4\htdocs\cakephp\Dewtouch-interview\app\Controller\FileUploadController.php, line 40]
+2020-03-29 16:51:38 Error: [FatalErrorException] Call to a member function error() on null
+Request URL: /cakephp/Dewtouch-interview/FileUpload
+Stack Trace:
+#0 C:\xampp5.6.4\htdocs\cakephp\Dewtouch-interview\lib\Cake\Error\ErrorHandler.php(213): ErrorHandler::handleFatalError(1, 'Call to a membe...', 'C:\\xampp5.6.4\\h...', 40)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', 'C:\\xampp5.6.4\\h...', 40, Array)
+#2 C:\xampp5.6.4\htdocs\cakephp\Dewtouch-interview\lib\Cake\Core\App.php(933): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', 'C:\\xampp5.6.4\\h...', 40, Array)
+#3 C:\xampp5.6.4\htdocs\cakephp\Dewtouch-interview\lib\Cake\Core\App.php(906): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2020-03-29 16:54:33 Error: Fatal Error (1): Call to a member function error() on null in [C:\xampp5.6.4\htdocs\cakephp\Dewtouch-interview\app\Controller\FileUploadController.php, line 45]
+2020-03-29 16:54:33 Error: [FatalErrorException] Call to a member function error() on null
+Request URL: /cakephp/Dewtouch-interview/FileUpload
+Stack Trace:
+#0 C:\xampp5.6.4\htdocs\cakephp\Dewtouch-interview\lib\Cake\Error\ErrorHandler.php(213): ErrorHandler::handleFatalError(1, 'Call to a membe...', 'C:\\xampp5.6.4\\h...', 45)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', 'C:\\xampp5.6.4\\h...', 45, Array)
+#2 C:\xampp5.6.4\htdocs\cakephp\Dewtouch-interview\lib\Cake\Core\App.php(933): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', 'C:\\xampp5.6.4\\h...', 45, Array)
+#3 C:\xampp5.6.4\htdocs\cakephp\Dewtouch-interview\lib\Cake\Core\App.php(906): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2020-03-29 16:54:44 Error: Fatal Error (1): Call to a member function error() on null in [C:\xampp5.6.4\htdocs\cakephp\Dewtouch-interview\app\Controller\FileUploadController.php, line 45]
+2020-03-29 16:54:44 Error: [FatalErrorException] Call to a member function error() on null
+Request URL: /cakephp/Dewtouch-interview/FileUpload
+Stack Trace:
+#0 C:\xampp5.6.4\htdocs\cakephp\Dewtouch-interview\lib\Cake\Error\ErrorHandler.php(213): ErrorHandler::handleFatalError(1, 'Call to a membe...', 'C:\\xampp5.6.4\\h...', 45)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', 'C:\\xampp5.6.4\\h...', 45, Array)
+#2 C:\xampp5.6.4\htdocs\cakephp\Dewtouch-interview\lib\Cake\Core\App.php(933): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', 'C:\\xampp5.6.4\\h...', 45, Array)
+#3 C:\xampp5.6.4\htdocs\cakephp\Dewtouch-interview\lib\Cake\Core\App.php(906): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2020-03-29 16:54:54 Error: Fatal Error (1): Call to a member function error() on null in [C:\xampp5.6.4\htdocs\cakephp\Dewtouch-interview\app\Controller\FileUploadController.php, line 45]
+2020-03-29 16:54:54 Error: [FatalErrorException] Call to a member function error() on null
+Request URL: /cakephp/Dewtouch-interview/FileUpload
+Stack Trace:
+#0 C:\xampp5.6.4\htdocs\cakephp\Dewtouch-interview\lib\Cake\Error\ErrorHandler.php(213): ErrorHandler::handleFatalError(1, 'Call to a membe...', 'C:\\xampp5.6.4\\h...', 45)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', 'C:\\xampp5.6.4\\h...', 45, Array)
+#2 C:\xampp5.6.4\htdocs\cakephp\Dewtouch-interview\lib\Cake\Core\App.php(933): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', 'C:\\xampp5.6.4\\h...', 45, Array)
+#3 C:\xampp5.6.4\htdocs\cakephp\Dewtouch-interview\lib\Cake\Core\App.php(906): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2020-03-30 05:43:27 Error: Fatal Error (4): syntax error, unexpected ''fileName'' (T_CONSTANT_ENCAPSED_STRING), expecting variable (T_VARIABLE) or '$' in [C:\xampp5.6.4\htdocs\cakephp\Dewtouch-interview\app\Controller\FileUploadController.php, line 24]
+2020-03-30 05:43:27 Error: [FatalErrorException] syntax error, unexpected ''fileName'' (T_CONSTANT_ENCAPSED_STRING), expecting variable (T_VARIABLE) or '$'
+Request URL: /cakephp/Dewtouch-interview/FileUpload
+Stack Trace:
+#0 C:\xampp5.6.4\htdocs\cakephp\Dewtouch-interview\lib\Cake\Error\ErrorHandler.php(213): ErrorHandler::handleFatalError(4, 'syntax error, u...', 'C:\\xampp5.6.4\\h...', 24)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', 'C:\\xampp5.6.4\\h...', 24, Array)
+#2 C:\xampp5.6.4\htdocs\cakephp\Dewtouch-interview\lib\Cake\Core\App.php(933): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', 'C:\\xampp5.6.4\\h...', 24, Array)
+#3 C:\xampp5.6.4\htdocs\cakephp\Dewtouch-interview\lib\Cake\Core\App.php(906): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2020-03-30 05:52:40 Error: [MissingActionException] Action FileUploadController::index() could not be found.
+Exception Attributes: array (
+  'controller' => 'FileUploadController',
+  'action' => 'index',
+)
+Request URL: /cakephp/Dewtouch-interview/FileUpload
+Stack Trace:
+#0 C:\xampp5.6.4\htdocs\cakephp\Dewtouch-interview\lib\Cake\Routing\Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#1 C:\xampp5.6.4\htdocs\cakephp\Dewtouch-interview\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(FileUploadController), Object(CakeRequest))
+#2 C:\xampp5.6.4\htdocs\cakephp\Dewtouch-interview\app\webroot\index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2020-03-30 05:55:45 Error: Fatal Error (1): Call to undefined function stop() in [C:\xampp5.6.4\htdocs\cakephp\Dewtouch-interview\app\Controller\FileUploadController.php, line 7]
+2020-03-30 05:55:45 Error: [FatalErrorException] Call to undefined function stop()
+Request URL: /cakephp/Dewtouch-interview/FileUpload
+Stack Trace:
+#0 C:\xampp5.6.4\htdocs\cakephp\Dewtouch-interview\lib\Cake\Error\ErrorHandler.php(213): ErrorHandler::handleFatalError(1, 'Call to undefin...', 'C:\\xampp5.6.4\\h...', 7)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to undefin...', 'C:\\xampp5.6.4\\h...', 7, Array)
+#2 C:\xampp5.6.4\htdocs\cakephp\Dewtouch-interview\lib\Cake\Core\App.php(933): call_user_func('ErrorHandler::h...', 1, 'Call to undefin...', 'C:\\xampp5.6.4\\h...', 7, Array)
+#3 C:\xampp5.6.4\htdocs\cakephp\Dewtouch-interview\lib\Cake\Core\App.php(906): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2020-03-30 06:02:25 Error: [MissingControllerException] Controller class FileUploadsController could not be found.
+Exception Attributes: array (
+  'class' => 'FileUploadsController',
+  'plugin' => NULL,
+)
+Request URL: /cakephp/Dewtouch-interview/file_uploads/add
+Stack Trace:
+#0 C:\xampp5.6.4\htdocs\cakephp\Dewtouch-interview\app\webroot\index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2020-03-30 06:03:16 Error: [MissingControllerException] Controller class FileUploadsController could not be found.
+Exception Attributes: array (
+  'class' => 'FileUploadsController',
+  'plugin' => NULL,
+)
+Request URL: /cakephp/Dewtouch-interview/file_uploads/add
+Stack Trace:
+#0 C:\xampp5.6.4\htdocs\cakephp\Dewtouch-interview\app\webroot\index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2020-03-30 06:03:51 Error: [MissingControllerException] Controller class FileUploadsController could not be found.
+Exception Attributes: array (
+  'class' => 'FileUploadsController',
+  'plugin' => NULL,
+)
+Request URL: /cakephp/Dewtouch-interview/file_uploads
+Stack Trace:
+#0 C:\xampp5.6.4\htdocs\cakephp\Dewtouch-interview\app\webroot\index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2020-03-30 06:11:20 Error: [MissingControllerException] Controller class FileUploadsController could not be found.
+Exception Attributes: array (
+  'class' => 'FileUploadsController',
+  'plugin' => NULL,
+)
+Request URL: /cakephp/Dewtouch-interview/file_uploads/add
+Stack Trace:
+#0 C:\xampp5.6.4\htdocs\cakephp\Dewtouch-interview\app\webroot\index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2020-03-30 06:17:00 Error: Fatal Error (1): Call to a member function error() on null in [C:\xampp5.6.4\htdocs\cakephp\Dewtouch-interview\app\Controller\FileUploadController.php, line 45]
+2020-03-30 06:17:00 Error: [FatalErrorException] Call to a member function error() on null
+Request URL: /cakephp/Dewtouch-interview/file_upload
+Stack Trace:
+#0 C:\xampp5.6.4\htdocs\cakephp\Dewtouch-interview\lib\Cake\Error\ErrorHandler.php(213): ErrorHandler::handleFatalError(1, 'Call to a membe...', 'C:\\xampp5.6.4\\h...', 45)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', 'C:\\xampp5.6.4\\h...', 45, Array)
+#2 C:\xampp5.6.4\htdocs\cakephp\Dewtouch-interview\lib\Cake\Core\App.php(933): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', 'C:\\xampp5.6.4\\h...', 45, Array)
+#3 C:\xampp5.6.4\htdocs\cakephp\Dewtouch-interview\lib\Cake\Core\App.php(906): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2020-03-30 06:17:17 Error: Fatal Error (1): Call to a member function error() on null in [C:\xampp5.6.4\htdocs\cakephp\Dewtouch-interview\app\Controller\FileUploadController.php, line 45]
+2020-03-30 06:17:17 Error: [FatalErrorException] Call to a member function error() on null
+Request URL: /cakephp/Dewtouch-interview/file_upload
+Stack Trace:
+#0 C:\xampp5.6.4\htdocs\cakephp\Dewtouch-interview\lib\Cake\Error\ErrorHandler.php(213): ErrorHandler::handleFatalError(1, 'Call to a membe...', 'C:\\xampp5.6.4\\h...', 45)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', 'C:\\xampp5.6.4\\h...', 45, Array)
+#2 C:\xampp5.6.4\htdocs\cakephp\Dewtouch-interview\lib\Cake\Core\App.php(933): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', 'C:\\xampp5.6.4\\h...', 45, Array)
+#3 C:\xampp5.6.4\htdocs\cakephp\Dewtouch-interview\lib\Cake\Core\App.php(906): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2020-03-30 06:22:56 Error: Fatal Error (1): Call to a member function success() on null in [C:\xampp5.6.4\htdocs\cakephp\Dewtouch-interview\app\Controller\FileUploadController.php, line 45]
+2020-03-30 06:22:56 Error: [FatalErrorException] Call to a member function success() on null
+Request URL: /cakephp/Dewtouch-interview/file_upload
+Stack Trace:
+#0 C:\xampp5.6.4\htdocs\cakephp\Dewtouch-interview\lib\Cake\Error\ErrorHandler.php(213): ErrorHandler::handleFatalError(1, 'Call to a membe...', 'C:\\xampp5.6.4\\h...', 45)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', 'C:\\xampp5.6.4\\h...', 45, Array)
+#2 C:\xampp5.6.4\htdocs\cakephp\Dewtouch-interview\lib\Cake\Core\App.php(933): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', 'C:\\xampp5.6.4\\h...', 45, Array)
+#3 C:\xampp5.6.4\htdocs\cakephp\Dewtouch-interview\lib\Cake\Core\App.php(906): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2020-03-30 06:23:09 Error: Fatal Error (1): Call to a member function error() on null in [C:\xampp5.6.4\htdocs\cakephp\Dewtouch-interview\app\Controller\FileUploadController.php, line 45]
+2020-03-30 06:23:09 Error: [FatalErrorException] Call to a member function error() on null
+Request URL: /cakephp/Dewtouch-interview/file_upload
+Stack Trace:
+#0 C:\xampp5.6.4\htdocs\cakephp\Dewtouch-interview\lib\Cake\Error\ErrorHandler.php(213): ErrorHandler::handleFatalError(1, 'Call to a membe...', 'C:\\xampp5.6.4\\h...', 45)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', 'C:\\xampp5.6.4\\h...', 45, Array)
+#2 C:\xampp5.6.4\htdocs\cakephp\Dewtouch-interview\lib\Cake\Core\App.php(933): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', 'C:\\xampp5.6.4\\h...', 45, Array)
+#3 C:\xampp5.6.4\htdocs\cakephp\Dewtouch-interview\lib\Cake\Core\App.php(906): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2020-03-30 06:24:29 Error: Fatal Error (1): Call to a member function error() on null in [C:\xampp5.6.4\htdocs\cakephp\Dewtouch-interview\app\Controller\FileUploadController.php, line 45]
+2020-03-30 06:24:29 Error: [FatalErrorException] Call to a member function error() on null
+Request URL: /cakephp/Dewtouch-interview/file_upload
+Stack Trace:
+#0 C:\xampp5.6.4\htdocs\cakephp\Dewtouch-interview\lib\Cake\Error\ErrorHandler.php(213): ErrorHandler::handleFatalError(1, 'Call to a membe...', 'C:\\xampp5.6.4\\h...', 45)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', 'C:\\xampp5.6.4\\h...', 45, Array)
+#2 C:\xampp5.6.4\htdocs\cakephp\Dewtouch-interview\lib\Cake\Core\App.php(933): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', 'C:\\xampp5.6.4\\h...', 45, Array)
+#3 C:\xampp5.6.4\htdocs\cakephp\Dewtouch-interview\lib\Cake\Core\App.php(906): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2020-03-30 06:24:40 Error: Fatal Error (1): Call to a member function error() on null in [C:\xampp5.6.4\htdocs\cakephp\Dewtouch-interview\app\Controller\FileUploadController.php, line 45]
+2020-03-30 06:24:40 Error: [FatalErrorException] Call to a member function error() on null
+Request URL: /cakephp/Dewtouch-interview/file_upload
+Stack Trace:
+#0 C:\xampp5.6.4\htdocs\cakephp\Dewtouch-interview\lib\Cake\Error\ErrorHandler.php(213): ErrorHandler::handleFatalError(1, 'Call to a membe...', 'C:\\xampp5.6.4\\h...', 45)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', 'C:\\xampp5.6.4\\h...', 45, Array)
+#2 C:\xampp5.6.4\htdocs\cakephp\Dewtouch-interview\lib\Cake\Core\App.php(933): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', 'C:\\xampp5.6.4\\h...', 45, Array)
+#3 C:\xampp5.6.4\htdocs\cakephp\Dewtouch-interview\lib\Cake\Core\App.php(906): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2020-03-30 06:25:13 Error: Fatal Error (1): Call to a member function error() on null in [C:\xampp5.6.4\htdocs\cakephp\Dewtouch-interview\app\Controller\FileUploadController.php, line 45]
+2020-03-30 06:25:13 Error: [FatalErrorException] Call to a member function error() on null
+Request URL: /cakephp/Dewtouch-interview/file_upload
+Stack Trace:
+#0 C:\xampp5.6.4\htdocs\cakephp\Dewtouch-interview\lib\Cake\Error\ErrorHandler.php(213): ErrorHandler::handleFatalError(1, 'Call to a membe...', 'C:\\xampp5.6.4\\h...', 45)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', 'C:\\xampp5.6.4\\h...', 45, Array)
+#2 C:\xampp5.6.4\htdocs\cakephp\Dewtouch-interview\lib\Cake\Core\App.php(933): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', 'C:\\xampp5.6.4\\h...', 45, Array)
+#3 C:\xampp5.6.4\htdocs\cakephp\Dewtouch-interview\lib\Cake\Core\App.php(906): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2020-03-30 07:23:03 Error: Fatal Error (1): Call to a member function error() on null in [C:\xampp5.6.4\htdocs\cakephp\Dewtouch-interview\app\Controller\FileUploadController.php, line 45]
+2020-03-30 07:23:03 Error: [FatalErrorException] Call to a member function error() on null
+Request URL: /cakephp/Dewtouch-interview/file_upload
+Stack Trace:
+#0 C:\xampp5.6.4\htdocs\cakephp\Dewtouch-interview\lib\Cake\Error\ErrorHandler.php(213): ErrorHandler::handleFatalError(1, 'Call to a membe...', 'C:\\xampp5.6.4\\h...', 45)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', 'C:\\xampp5.6.4\\h...', 45, Array)
+#2 C:\xampp5.6.4\htdocs\cakephp\Dewtouch-interview\lib\Cake\Core\App.php(933): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', 'C:\\xampp5.6.4\\h...', 45, Array)
+#3 C:\xampp5.6.4\htdocs\cakephp\Dewtouch-interview\lib\Cake\Core\App.php(906): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2020-03-30 07:23:07 Error: Fatal Error (1): Call to a member function error() on null in [C:\xampp5.6.4\htdocs\cakephp\Dewtouch-interview\app\Controller\FileUploadController.php, line 45]
+2020-03-30 07:23:07 Error: [FatalErrorException] Call to a member function error() on null
+Request URL: /cakephp/Dewtouch-interview/file_upload
+Stack Trace:
+#0 C:\xampp5.6.4\htdocs\cakephp\Dewtouch-interview\lib\Cake\Error\ErrorHandler.php(213): ErrorHandler::handleFatalError(1, 'Call to a membe...', 'C:\\xampp5.6.4\\h...', 45)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', 'C:\\xampp5.6.4\\h...', 45, Array)
+#2 C:\xampp5.6.4\htdocs\cakephp\Dewtouch-interview\lib\Cake\Core\App.php(933): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', 'C:\\xampp5.6.4\\h...', 45, Array)
+#3 C:\xampp5.6.4\htdocs\cakephp\Dewtouch-interview\lib\Cake\Core\App.php(906): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2020-03-30 07:23:19 Error: Fatal Error (1): Call to a member function set() on null in [C:\xampp5.6.4\htdocs\cakephp\Dewtouch-interview\app\Controller\FileUploadController.php, line 45]
+2020-03-30 07:23:19 Error: [FatalErrorException] Call to a member function set() on null
+Request URL: /cakephp/Dewtouch-interview/file_upload
+Stack Trace:
+#0 C:\xampp5.6.4\htdocs\cakephp\Dewtouch-interview\lib\Cake\Error\ErrorHandler.php(213): ErrorHandler::handleFatalError(1, 'Call to a membe...', 'C:\\xampp5.6.4\\h...', 45)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', 'C:\\xampp5.6.4\\h...', 45, Array)
+#2 C:\xampp5.6.4\htdocs\cakephp\Dewtouch-interview\lib\Cake\Core\App.php(933): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', 'C:\\xampp5.6.4\\h...', 45, Array)
+#3 C:\xampp5.6.4\htdocs\cakephp\Dewtouch-interview\lib\Cake\Core\App.php(906): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2020-03-30 07:31:39 Error: Fatal Error (1): Call to a member function error() on null in [C:\xampp5.6.4\htdocs\cakephp\Dewtouch-interview\app\Controller\FileUploadController.php, line 45]
+2020-03-30 07:31:39 Error: [FatalErrorException] Call to a member function error() on null
+Request URL: /cakephp/Dewtouch-interview/file_upload
+Stack Trace:
+#0 C:\xampp5.6.4\htdocs\cakephp\Dewtouch-interview\lib\Cake\Error\ErrorHandler.php(213): ErrorHandler::handleFatalError(1, 'Call to a membe...', 'C:\\xampp5.6.4\\h...', 45)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', 'C:\\xampp5.6.4\\h...', 45, Array)
+#2 C:\xampp5.6.4\htdocs\cakephp\Dewtouch-interview\lib\Cake\Core\App.php(933): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', 'C:\\xampp5.6.4\\h...', 45, Array)
+#3 C:\xampp5.6.4\htdocs\cakephp\Dewtouch-interview\lib\Cake\Core\App.php(906): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2020-03-30 07:32:08 Error: Fatal Error (1): Call to a member function error() on null in [C:\xampp5.6.4\htdocs\cakephp\Dewtouch-interview\app\Controller\FileUploadController.php, line 45]
+2020-03-30 07:32:08 Error: [FatalErrorException] Call to a member function error() on null
+Request URL: /cakephp/Dewtouch-interview/FileUpload
+Stack Trace:
+#0 C:\xampp5.6.4\htdocs\cakephp\Dewtouch-interview\lib\Cake\Error\ErrorHandler.php(213): ErrorHandler::handleFatalError(1, 'Call to a membe...', 'C:\\xampp5.6.4\\h...', 45)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', 'C:\\xampp5.6.4\\h...', 45, Array)
+#2 C:\xampp5.6.4\htdocs\cakephp\Dewtouch-interview\lib\Cake\Core\App.php(933): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', 'C:\\xampp5.6.4\\h...', 45, Array)
+#3 C:\xampp5.6.4\htdocs\cakephp\Dewtouch-interview\lib\Cake\Core\App.php(906): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2020-03-30 10:06:27 Error: Fatal Error (4): syntax error, unexpected '<' in [C:\xampp5.6.4\htdocs\cakephp\Dewtouch-interview\app\Controller\OrderReportController.php, line 19]
+2020-03-30 10:06:27 Error: [FatalErrorException] syntax error, unexpected '<'
+Request URL: /cakephp/Dewtouch-interview/OrderReport
+Stack Trace:
+#0 C:\xampp5.6.4\htdocs\cakephp\Dewtouch-interview\lib\Cake\Error\ErrorHandler.php(213): ErrorHandler::handleFatalError(4, 'syntax error, u...', 'C:\\xampp5.6.4\\h...', 19)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', 'C:\\xampp5.6.4\\h...', 19, Array)
+#2 C:\xampp5.6.4\htdocs\cakephp\Dewtouch-interview\lib\Cake\Core\App.php(933): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', 'C:\\xampp5.6.4\\h...', 19, Array)
+#3 C:\xampp5.6.4\htdocs\cakephp\Dewtouch-interview\lib\Cake\Core\App.php(906): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2020-03-30 10:10:48 Error: Fatal Error (4): syntax error, unexpected '<', expecting ')' in [C:\xampp5.6.4\htdocs\cakephp\Dewtouch-interview\app\Controller\OrderReportController.php, line 24]
+2020-03-30 10:10:48 Error: [FatalErrorException] syntax error, unexpected '<', expecting ')'
+Request URL: /cakephp/Dewtouch-interview/OrderReport
+Stack Trace:
+#0 C:\xampp5.6.4\htdocs\cakephp\Dewtouch-interview\lib\Cake\Error\ErrorHandler.php(213): ErrorHandler::handleFatalError(4, 'syntax error, u...', 'C:\\xampp5.6.4\\h...', 24)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', 'C:\\xampp5.6.4\\h...', 24, Array)
+#2 C:\xampp5.6.4\htdocs\cakephp\Dewtouch-interview\lib\Cake\Core\App.php(933): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', 'C:\\xampp5.6.4\\h...', 24, Array)
+#3 C:\xampp5.6.4\htdocs\cakephp\Dewtouch-interview\lib\Cake\Core\App.php(906): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2020-03-30 10:36:42 Error: [MissingHelperException] Helper class Html2Helper could not be found.
+Exception Attributes: array (
+  'class' => 'Html2Helper',
+  'plugin' => false,
+)
+Request URL: /cakephp/Dewtouch-interview/
+Stack Trace:
+#0 C:\xampp5.6.4\htdocs\cakephp\Dewtouch-interview\lib\Cake\View\HelperCollection.php(63): HelperCollection->load('Html2')
+#1 C:\xampp5.6.4\htdocs\cakephp\Dewtouch-interview\lib\Cake\View\View.php(848): HelperCollection->__isset('Html2')
+#2 C:\xampp5.6.4\htdocs\cakephp\Dewtouch-interview\app\View\Home\index.ctp(107): View->__get('Html2')
+#3 C:\xampp5.6.4\htdocs\cakephp\Dewtouch-interview\lib\Cake\View\View.php(961): include('C:\\xampp5.6.4\\h...')
+#4 C:\xampp5.6.4\htdocs\cakephp\Dewtouch-interview\lib\Cake\View\View.php(923): View->_evaluate('C:\\xampp5.6.4\\h...', Array)
+#5 C:\xampp5.6.4\htdocs\cakephp\Dewtouch-interview\lib\Cake\View\View.php(473): View->_render('C:\\xampp5.6.4\\h...')
+#6 C:\xampp5.6.4\htdocs\cakephp\Dewtouch-interview\lib\Cake\Controller\Controller.php(960): View->render(NULL, NULL)
+#7 C:\xampp5.6.4\htdocs\cakephp\Dewtouch-interview\lib\Cake\Routing\Dispatcher.php(200): Controller->render()
+#8 C:\xampp5.6.4\htdocs\cakephp\Dewtouch-interview\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(HomeController), Object(CakeRequest))
+#9 C:\xampp5.6.4\htdocs\cakephp\Dewtouch-interview\app\webroot\index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#10 {main}
+2020-03-30 10:36:44 Error: [MissingHelperException] Helper class Html2Helper could not be found.
+Exception Attributes: array (
+  'class' => 'Html2Helper',
+  'plugin' => false,
+)
+Request URL: /cakephp/Dewtouch-interview/
+Stack Trace:
+#0 C:\xampp5.6.4\htdocs\cakephp\Dewtouch-interview\lib\Cake\View\HelperCollection.php(63): HelperCollection->load('Html2')
+#1 C:\xampp5.6.4\htdocs\cakephp\Dewtouch-interview\lib\Cake\View\View.php(848): HelperCollection->__isset('Html2')
+#2 C:\xampp5.6.4\htdocs\cakephp\Dewtouch-interview\app\View\Home\index.ctp(107): View->__get('Html2')
+#3 C:\xampp5.6.4\htdocs\cakephp\Dewtouch-interview\lib\Cake\View\View.php(961): include('C:\\xampp5.6.4\\h...')
+#4 C:\xampp5.6.4\htdocs\cakephp\Dewtouch-interview\lib\Cake\View\View.php(923): View->_evaluate('C:\\xampp5.6.4\\h...', Array)
+#5 C:\xampp5.6.4\htdocs\cakephp\Dewtouch-interview\lib\Cake\View\View.php(473): View->_render('C:\\xampp5.6.4\\h...')
+#6 C:\xampp5.6.4\htdocs\cakephp\Dewtouch-interview\lib\Cake\Controller\Controller.php(960): View->render(NULL, NULL)
+#7 C:\xampp5.6.4\htdocs\cakephp\Dewtouch-interview\lib\Cake\Routing\Dispatcher.php(200): Controller->render()
+#8 C:\xampp5.6.4\htdocs\cakephp\Dewtouch-interview\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(HomeController), Object(CakeRequest))
+#9 C:\xampp5.6.4\htdocs\cakephp\Dewtouch-interview\app\webroot\index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#10 {main}
+2020-03-30 10:36:51 Error: [MissingHelperException] Helper class Html5Helper could not be found.
+Exception Attributes: array (
+  'class' => 'Html5Helper',
+  'plugin' => false,
+)
+Request URL: /cakephp/Dewtouch-interview/
+Stack Trace:
+#0 C:\xampp5.6.4\htdocs\cakephp\Dewtouch-interview\lib\Cake\View\HelperCollection.php(63): HelperCollection->load('Html5')
+#1 C:\xampp5.6.4\htdocs\cakephp\Dewtouch-interview\lib\Cake\View\View.php(848): HelperCollection->__isset('Html5')
+#2 C:\xampp5.6.4\htdocs\cakephp\Dewtouch-interview\app\View\Home\index.ctp(107): View->__get('Html5')
+#3 C:\xampp5.6.4\htdocs\cakephp\Dewtouch-interview\lib\Cake\View\View.php(961): include('C:\\xampp5.6.4\\h...')
+#4 C:\xampp5.6.4\htdocs\cakephp\Dewtouch-interview\lib\Cake\View\View.php(923): View->_evaluate('C:\\xampp5.6.4\\h...', Array)
+#5 C:\xampp5.6.4\htdocs\cakephp\Dewtouch-interview\lib\Cake\View\View.php(473): View->_render('C:\\xampp5.6.4\\h...')
+#6 C:\xampp5.6.4\htdocs\cakephp\Dewtouch-interview\lib\Cake\Controller\Controller.php(960): View->render(NULL, NULL)
+#7 C:\xampp5.6.4\htdocs\cakephp\Dewtouch-interview\lib\Cake\Routing\Dispatcher.php(200): Controller->render()
+#8 C:\xampp5.6.4\htdocs\cakephp\Dewtouch-interview\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(HomeController), Object(CakeRequest))
+#9 C:\xampp5.6.4\htdocs\cakephp\Dewtouch-interview\app\webroot\index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#10 {main}
+2020-03-30 10:50:19 Error: Fatal Error (4): syntax error, unexpected ';', expecting ')' in [C:\xampp5.6.4\htdocs\cakephp\Dewtouch-interview\app\Controller\OrderReportController.php, line 21]
+2020-03-30 10:50:19 Error: [FatalErrorException] syntax error, unexpected ';', expecting ')'
+Request URL: /cakephp/Dewtouch-interview/OrderReport
+Stack Trace:
+#0 C:\xampp5.6.4\htdocs\cakephp\Dewtouch-interview\lib\Cake\Error\ErrorHandler.php(213): ErrorHandler::handleFatalError(4, 'syntax error, u...', 'C:\\xampp5.6.4\\h...', 21)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', 'C:\\xampp5.6.4\\h...', 21, Array)
+#2 C:\xampp5.6.4\htdocs\cakephp\Dewtouch-interview\lib\Cake\Core\App.php(933): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', 'C:\\xampp5.6.4\\h...', 21, Array)
+#3 C:\xampp5.6.4\htdocs\cakephp\Dewtouch-interview\lib\Cake\Core\App.php(906): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2020-03-30 10:50:37 Error: Fatal Error (4): syntax error, unexpected 'foreach' (T_FOREACH), expecting ')' in [C:\xampp5.6.4\htdocs\cakephp\Dewtouch-interview\app\Controller\OrderReportController.php, line 22]
+2020-03-30 10:50:37 Error: [FatalErrorException] syntax error, unexpected 'foreach' (T_FOREACH), expecting ')'
+Request URL: /cakephp/Dewtouch-interview/OrderReport
+Stack Trace:
+#0 C:\xampp5.6.4\htdocs\cakephp\Dewtouch-interview\lib\Cake\Error\ErrorHandler.php(213): ErrorHandler::handleFatalError(4, 'syntax error, u...', 'C:\\xampp5.6.4\\h...', 22)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', 'C:\\xampp5.6.4\\h...', 22, Array)
+#2 C:\xampp5.6.4\htdocs\cakephp\Dewtouch-interview\lib\Cake\Core\App.php(933): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', 'C:\\xampp5.6.4\\h...', 22, Array)
+#3 C:\xampp5.6.4\htdocs\cakephp\Dewtouch-interview\lib\Cake\Core\App.php(906): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
