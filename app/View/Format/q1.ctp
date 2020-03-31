@@ -59,7 +59,7 @@ $(document).ready(function(){
 	});
 
 	
-	$(".showDialog").click(function(){ var id = $(this).data('id'); $("#"+id).dialog('open'); });
+	$(".showDialog").mouseover(function(){ var id = $(this).data('id'); $("#"+id).dialog('open'); });
 
 })
 

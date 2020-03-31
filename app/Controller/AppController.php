@@ -31,15 +31,31 @@ App::uses('Controller', 'Controller');
  * @link		http://book.cakephp.org/2.0/en/controllers.html#the-app-controller
  */
 class AppController extends Controller {
+
+	public $components = array(
+		'Session',
+        'RequestHandler',
+		'Paginator'
+    );
+
 	public function setFlash($message,$extra=array()){
 		$this->Session->setFlash($message,'flash_metronic',$extra);
 	}
 	
-	public function beforeFilter(){
-		if($this->request->is('ajax')){
-			$this->layout = 'ajax';
-		}
-	}
+
+
+    public function beforeFilter(){
+        parent::beforeFilter();
+        if($this->RequestHandler->responseType() == 'json'){
+            $this->RequestHandler->setContent('json', 'application/json' );
+        }
+    }
+
+	// public function beforeFilter(){
+	// 	if($this->request->is('ajax')){
+	// 		$this->layout = 'ajax';
+	// 	}
+	// }
 	
 	public function setSuccess($msg=null){
 		if(!$msg){
@@ -54,4 +70,6 @@ class AppController extends Controller {
 		}
 		$this->setFlash($msg,array('class'=>'alert-error'));
 	}
+
+	
 }

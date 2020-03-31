@@ -21,7 +21,7 @@ Question: Advanced Input Field</div>
 <button class="close" data-dismiss="alert"></button>
 The table you start with</div>
 
-<table class="table table-striped table-bordered table-hover">
+<table class="table table-striped table-bordered table-hover" id="advanced">
 <thead>
 <th><span id="add_item_button" class="btn mini green addbutton" onclick="addToObj=false">
 											<i class="icon-plus"></i></span></th>
@@ -31,13 +31,14 @@ The table you start with</div>
 </thead>
 
 <tbody>
+
 	<tr>
-	<td></td>
-	<td><textarea name="data[1][description]" class="m-wrap  description required" rows="2" ></textarea></td>
-	<td><input name="data[1][quantity]" class=""></td>
-	<td><input name="data[1][unit_price]"  class=""></td>
-	
-</tr>
+		<td>1</td>
+		<td><textarea name="data[1][description]" class="m-wrap  description required" rows="2" ></textarea></td>
+		<td><input name="data[1][quantity]" class=""></td>
+		<td><input name="data[1][unit_price]"  class=""></td>
+		
+	</tr>
 
 </tbody>
 
@@ -62,18 +63,20 @@ Your browser does not support the video tag.
 
 <?php $this->start('script_own');?>
 <script>
+
+
+
+let lineNo = 2; 
 $(document).ready(function(){
 
 	$("#add_item_button").click(function(){
-
-
-		alert("suppose to add a new row");
-		
-
-		});
-
-	
+		markup = "<tr><td>"+ lineNo +"</td>"+ "<td><textarea name=\"data["+ lineNo +"][description]\" class=\"m-wrap  description required\" rows=\"2\" ></textarea></td>" + "<td><input name=\"data["+ lineNo +"][quantity]\" class=\"\"></td>" + "<td><input name=\"data["+ lineNo +"][unit_price]\"  class=\"\"></td></tr>" ; 
+                tableBody = $("table tbody"); 
+                tableBody.append(markup); 
+                lineNo++; 
+	});
 });
+ 
 </script>
 <?php $this->end();?>
 

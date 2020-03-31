@@ -12,13 +12,22 @@
 	<div class="alert">
 		<h3>Import Form</h3>
 	</div>
+
+	<div class="alert alert-success">	
 <?php
-echo $this->Form->create('FileUpload');
+echo $this->Form->create('FileUpload', array('type' => 'file', 'action' => 'add'));
+?>
+	<legend> Upload </legend>
+
+
+<?php
+echo $this->Form->input('name', array('label' => 'Name', 'type' => 'text'));
+echo $this->Form->input('email', array('label' => 'Email', 'type' => 'email'));
 echo $this->Form->input('file', array('label' => 'File Upload', 'type' => 'file'));
 echo $this->Form->submit('Upload', array('class' => 'btn btn-primary'));
 echo $this->Form->end();
 ?>
-
+	</div>
 	<hr />
 
 	<div class="alert alert-success">
